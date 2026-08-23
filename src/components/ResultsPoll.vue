@@ -36,7 +36,7 @@ const loading = ref(true)
 const error = ref('')
 let connection = null
 
-const baseUrl = import.meta.env.VITE_API_BASE_URL || 'https://pollbuildergateway.onrender.com'
+const baseUrl = import.meta.env.VITE_API_BASE_URL || 'https://pollbuilder-gateway-8tc9.onrender.com'
 const hubUrl = `${baseUrl.replace(/\/$/, '')}/hubs/polls`
 
 onMounted(async () => {

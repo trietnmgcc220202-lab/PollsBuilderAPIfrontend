@@ -45,7 +45,7 @@ const closePoll = async () => {
   if (!confirm('Bạn có chắc chắn muốn đóng Poll này? Người khác sẽ không thể vote được nữa.')) return;
   
   try {
-    await axios.patch(`https://pollbuildergateway.onrender.com/api/polls/${props.poll.code}/close`, {}, {
+    await axios.patch(`https://pollbuilder-gateway-8tc9.onrender.com/api/polls/${props.poll.code}/close`, {}, {
       headers: { Authorization: `Bearer ${token.value}` }
     });
     alert('Đã đóng Poll thành công!');

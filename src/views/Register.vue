@@ -40,7 +40,7 @@ const errorMessage = ref('');
 const router = useRouter();
 const route = useRoute();
 const { login } = useAuth();
-const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'https://pollbuildergateway.onrender.com';
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'https://pollbuilder-gateway-8tc9.onrender.com';
 
 const handleRegister = async () => {
   isLoading.value = true;
